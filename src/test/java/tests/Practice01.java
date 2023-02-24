@@ -22,6 +22,8 @@ public class Practice01 {
         for (WebElement w : obj.ulkeler) {
             System.out.println(w.getText());
         }
+
+
         //Ülkeler ile şehirleri eşleştiriniz
         Actions actions = new Actions(Driver.getDriver());
         actions.dragAndDrop(obj.Seoul,obj.Korea).
@@ -31,6 +33,8 @@ public class Practice01 {
                 dragAndDrop(obj.Rome,obj.Italy).
                 dragAndDrop(obj.Madrid,obj.Spain).
                 dragAndDrop(obj.Copenhagen,obj.Denmark).perform();
+
+
     }
     /*
     --http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html adresine gidiniz
@@ -39,3 +43,14 @@ public class Practice01 {
      */
 }
 
+
+
+
+
+
+/*
+Actions actions= new Actions(Driver.getDriver());
+for (int i = 1; i <8 ; i++) {
+    actions.dragAndDrop(Driver.getDriver().findElement(By.id("box"+i)), Driver.getDriver().findElement(By.id("box10"+i))).perform();
+}
+ */

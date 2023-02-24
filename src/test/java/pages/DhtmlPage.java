@@ -13,6 +13,10 @@ public class DhtmlPage {
     }
     @FindBy (xpath = "//*[@id='countries']//div")
     public List<WebElement> ulkeler;
+
+
+
+
     @FindBy (xpath = "//*[@id='box1']")
     public WebElement oslo;
     @FindBy (xpath = "//*[@id='box2']")

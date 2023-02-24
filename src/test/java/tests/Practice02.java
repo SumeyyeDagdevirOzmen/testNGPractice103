@@ -49,4 +49,11 @@ public class Practice02 {
 
     }
 
+    @Test
+    public void test2() {
+    }
+
+    @Test
+    public void test1() {
+    }
 }
